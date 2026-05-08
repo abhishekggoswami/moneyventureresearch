@@ -943,7 +943,7 @@ function PricingHero() {
           {[
             { label: "Research Programs",  value: "3" },
             { label: "Billing Cycles",     value: "Monthly / Quarterly / Yearly" },
-            { label: "SEBI Reg. No.",      value: "INH000017407" },
+            { label: "SEBI Reg. No.",      value: "INH000026114" },
           ].map((s, i) => (
             <div
               key={s.label}
@@ -1094,7 +1094,8 @@ export function PricingContent() {
           >
             Investment in securities market are subject to market risks. Read all related documents carefully before investing.
             Registration granted by SEBI and certification from NISM in no way guarantee performance of the Research Analyst
-            or provide any assurance of returns to investors. SEBI Research Analyst Registration No.: INH000017407
+            or provide any assurance of returns to investors. SEBI Research Analyst Registration No.: INH000026114
+
           </p>
         </div>
       </section>

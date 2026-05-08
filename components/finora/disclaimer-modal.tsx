@@ -108,7 +108,7 @@ export function DisclaimerModal() {
               </a>
             </div>
             <p className="text-xs font-bold text-[#1B4332]">
-              SEBI Research Analyst Registration No.: INH000017407
+              SEBI Research Analyst Registration No.: INH000026114
             </p>
           </div>
         </div>

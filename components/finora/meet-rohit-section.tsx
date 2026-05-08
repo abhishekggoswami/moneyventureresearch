@@ -149,7 +149,7 @@ export function MeetRohitSection() {
                   ))}
                 </div>
                 <p className="text-[#C5D82D] text-[10px] font-bold tracking-widest uppercase mb-1">SEBI Registered</p>
-                <p className="text-white/50 text-[9px] font-medium mb-5">INH000009269</p>
+                <p className="text-white/50 text-[9px] font-medium mb-5">INH000026114</p>
                 <p className="text-5xl font-black text-white leading-none">10+</p>
                 <p className="text-white/65 text-xs font-medium mt-1.5 leading-snug">Years of<br />Market Expertise</p>
               </div>
@@ -274,7 +274,7 @@ export function MeetRohitSection() {
               <div className="flex items-center gap-1.5 mb-2">
                 {[1,2,3,4,5].map((i) => <Star key={i} className="w-6 h-6 fill-[#C5D82D] text-[#C5D82D]" />)}
               </div>
-              <p className="text-sm text-[#8A9A92] font-medium mb-8">SEBI Reg. No. INH000009269</p>
+              <p className="text-sm text-[#8A9A92] font-medium mb-8">SEBI Reg. No. INH000026114</p>
             </div>
 
             <div className="h-px bg-gray-200 my-10" />

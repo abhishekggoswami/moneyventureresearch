@@ -189,7 +189,7 @@ export function Navbar() {
               <span className="text-[9px] text-gray-400 font-semibold uppercase tracking-wide">Registered</span>
             </div>
             <div className="w-px h-7 bg-[#1B4332]/15" />
-            <span className="text-[11px] text-[#1B4332] font-bold tracking-wide">INH000017407</span>
+            <span className="text-[11px] text-[#1B4332] font-bold tracking-wide">INH000026114</span>
           </div>
 
           {/* E-KYC button */}
@@ -245,7 +245,7 @@ export function Navbar() {
                     <p className="text-white/50 text-xs mt-0.5">SEBI Compliance Documents</p>
                   </div>
                   <span className="bg-[#C5D82D] text-[#1B4332] text-xs font-bold px-2.5 py-1 rounded-full">
-                    INH000017407
+                    INH000026114
                   </span>
                 </div>
 

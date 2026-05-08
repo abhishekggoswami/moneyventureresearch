@@ -222,7 +222,7 @@ export function ContactContent() {
             {[
               { label: "Response Time",   value: "< 24 hrs" },
               { label: "Support Days",    value: "6 Days" },
-              { label: "SEBI Reg. No.",   value: "INH000017407" },
+              { label: "SEBI Reg. No.",   value: "INH000026114" },
             ].map((s, i) => (
               <div
                 key={s.label}
@@ -393,7 +393,7 @@ export function ContactContent() {
                 }}
               >
                 <p className="text-xs font-bold text-[#C5D82D] uppercase tracking-widest mb-1">SEBI Registered</p>
-                <p className="font-bold text-xl mb-2">INH000017407</p>
+                <p className="font-bold text-xl mb-2">INH000026114</p>
                 <p className="text-white/60 text-sm leading-relaxed">
                   Money Ventures Research is a SEBI Registered Research Analyst. All investment advice is subject to applicable regulations and investor risk profiling.
                 </p>

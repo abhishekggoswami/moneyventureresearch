@@ -168,7 +168,7 @@ export function ComplaintBoard() {
             </div>
             <div className="text-right">
               <p className="text-xs text-[#1B4332] font-semibold">SEBI Registered Research Analyst</p>
-              <p className="text-xs text-gray-400 mt-0.5">Money Ventures | Registration No.: INH000XXXXXX</p>
+              <p className="text-xs text-gray-400 mt-0.5">Money Ventures | Registration No.: INH000026114</p>
             </div>
           </div>
         </div>

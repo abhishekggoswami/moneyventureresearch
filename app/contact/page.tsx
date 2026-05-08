@@ -7,7 +7,7 @@ import { ScrollToTop } from "@/components/finora/scroll-to-top"
 export const metadata = {
   title: "Contact — Money Ventures Research",
   description:
-    "Get in touch with the Money Ventures Research team. SEBI Registered Research Analyst — INH000017407. Reach us for queries about subscriptions, research, or compliance.",
+    "Get in touch with the Money Ventures Research team. SEBI Registered Research Analyst — INH000026114. Reach us for queries about subscriptions, research, or compliance.",
 }
 
 export default function ContactPage() {

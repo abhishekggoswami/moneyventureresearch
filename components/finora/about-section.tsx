@@ -124,7 +124,7 @@ export function AboutSection() {
                 {/* SEBI badge overlay */}
                 <div className="absolute bottom-3 right-3 bg-[#1B4332] text-white px-4 py-2.5 rounded-xl">
                   <div className="text-[10px] font-bold text-[#C5D82D] tracking-widest">SEBI RA</div>
-                  <div className="text-[11px] text-gray-300">INH000017407</div>
+                  <div className="text-[11px] text-gray-300">INH000026114</div>
                 </div>
               </div>
             </div>
