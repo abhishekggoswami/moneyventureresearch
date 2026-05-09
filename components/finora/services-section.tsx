@@ -526,18 +526,16 @@ function AllInOneCard() {
             </div>
 
             {/* Price */}
-            <div>
-              <div style={{ display: "flex", alignItems: "flex-end", gap: "6px" }}>
-                <span style={{ color: "#C5D82D", fontSize: "44px", fontWeight: 700, lineHeight: 1 }}>
-                  &#8377;{perMonth.toLocaleString("en-IN")}
-                </span>
-                <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "14px", marginBottom: "6px" }}>/mo</span>
-              </div>
-              {opt.months > 1 && (
-                <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "11px", marginTop: "4px" }}>
-                  &#8377;{total.toLocaleString("en-IN")} billed {opt.label.toLowerCase()}
-                </p>
-              )}
+            {/* Price */}
+<div>
+  <div style={{ display: "flex", alignItems: "flex-end", gap: "6px" }}>
+    <span style={{ color: "#C5D82D", fontSize: "44px", fontWeight: 700, lineHeight: 1 }}>
+      &#8377;{total.toLocaleString("en-IN")}
+    </span>
+  </div>
+  <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "11px", marginTop: "6px" }}>
+    billed {opt.label.toLowerCase()}
+  </p>
               {opt.discount > 0 && (
                 <span style={{
                   display: "inline-block", marginTop: "10px",

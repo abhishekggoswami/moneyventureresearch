@@ -314,15 +314,15 @@ function BundleCard() {
               ))}
             </div>
             {/* Price */}
-            <div className="flex items-end gap-2">
-              <span className="text-[#C5D82D] text-4xl font-black leading-none">
-                &#8377;{perMonth.toLocaleString("en-IN")}
-              </span>
-              <span className="text-white/50 text-sm mb-1">/mo</span>
-            </div>
-            <p className="text-white/40 text-xs">
-              &#8377;{total.toLocaleString("en-IN")} billed {opt.label.toLowerCase()}
-            </p>
+            {/* Price */}
+<div className="flex items-end gap-2">
+  <span className="text-[#C5D82D] text-4xl font-black leading-none">
+    &#8377;{total.toLocaleString("en-IN")}
+  </span>
+</div>
+<p className="text-white/40 text-xs">
+  billed {opt.label.toLowerCase()}
+</p>
           </div>
         </div>
       </div>
