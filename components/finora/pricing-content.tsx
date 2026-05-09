@@ -682,24 +682,7 @@ function BundlePricingBlock() {
 
       {/* Body — stacks on mobile, side-by-side on md+ */}
       <div style={{ padding: "clamp(24px,5vw,40px) clamp(16px,4vw,48px)", display: "flex", gap: "clamp(24px,5vw,48px)", flexWrap: "wrap" }}>
-      {/* Period toggle */}
-<div style={{ display: "inline-flex", background: "#f3f4f6", borderRadius: "12px", padding: "4px", gap: "4px", alignSelf: "flex-start" }}>
-  {BUNDLE_PERIODS.map((o) => (
-    <button
-      key={o.key}
-      onClick={() => setBp(o.key)}
-      style={{
-        padding: "8px 18px", borderRadius: "9px", border: "none", cursor: "pointer",
-        fontSize: "12px", fontWeight: 700,
-        background: bp === o.key ? "#1B4332" : "transparent",
-        color: bp === o.key ? "#C5D82D" : "#6b7280",
-        transition: "all 180ms ease",
-      }}
-    >
-      {o.label}
-    </button>
-  ))}
-</div>
+      
         {/* Left — toggle + price + CTA */}
         <div style={{ flex: "1 1 220px", minWidth: 0, display: "flex", flexDirection: "column", gap: "20px" }}>
 
