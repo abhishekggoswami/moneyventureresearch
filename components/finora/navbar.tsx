@@ -193,9 +193,14 @@ export function Navbar() {
           </div>
 
           {/* E-KYC button */}
-          <button className="flex items-center gap-1.5 border-2 border-[#1B4332] text-[#1B4332] font-bold text-sm px-4 py-2 rounded-full hover:bg-[#1B4332] hover:text-white transition-all duration-200">
+          <a
+            href="https://kyc.moneyventureresearch.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 border-2 border-[#1B4332] text-[#1B4332] font-bold text-sm px-4 py-2 rounded-full hover:bg-[#1B4332] hover:text-white transition-all duration-200"
+          >
             E-KYC
-          </button>
+          </a>
 
           <Link
             href="/contact"
