@@ -247,7 +247,7 @@ function fmt(n: number) {
   return "₹" + n.toLocaleString("en-IN")
 }
 
-// ─── Period Toggle ───────────────────����──────────────────��─────────────────────
+// ─── Period Toggle ───────────────────����──────────────────��───────────���─────────
 
 function PeriodToggle({
   period,
@@ -597,7 +597,7 @@ function PricingPageServiceBlock({
       }}
     >
       {/* Service heading */}
-      <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "28px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "28px", justifyContent: "center" }}>
         <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "#1B4332", display: "flex", alignItems: "center", justifyContent: "center", color: "#C5D82D", flexShrink: 0 }}>
           {service.icon}
         </div>
@@ -608,7 +608,7 @@ function PricingPageServiceBlock({
       </div>
 
       {/* 3 cards: Monthly, Quarterly, Yearly */}
-      <div style={{ display: "flex", gap: "18px", flexWrap: "wrap", alignItems: "flex-start" }}>
+      <div style={{ display: "flex", gap: "18px", flexWrap: "wrap", alignItems: "flex-start", justifyContent: "center" }}>
         {PERIOD_CONFIG.map((pc, ci) => (
           <PeriodCard
             key={pc.key}
@@ -631,7 +631,7 @@ function PricingPageServiceBlock({
 
 function BundlePricingBlock() {
   const { ref, visible } = useInView(0.1)
-  const bp       = "quarterly" as BundlePeriod
+  const [bp, setBp] = useState<BundlePeriod>("quarterly")
   const opt      = BUNDLE_PERIODS.find((o) => o.key === bp)!
   const total    = opt.price
   const perMonth = Math.round(total / opt.months)
@@ -683,19 +683,37 @@ function BundlePricingBlock() {
       {/* Body — stacks on mobile, side-by-side on md+ */}
       <div style={{ padding: "clamp(24px,5vw,40px) clamp(16px,4vw,48px)", display: "flex", gap: "clamp(24px,5vw,48px)", flexWrap: "wrap" }}>
 
-        {/* Left — price + CTA */}
+        {/* Left — toggle + price + CTA */}
         <div style={{ flex: "1 1 220px", minWidth: 0, display: "flex", flexDirection: "column", gap: "20px" }}>
+
+          {/* Period toggle */}
+          <div style={{ display: "inline-flex", background: "#f3f4f6", borderRadius: "12px", padding: "4px", gap: "4px", alignSelf: "flex-start" }}>
+            {BUNDLE_PERIODS.map((o) => (
+              <button
+                key={o.key}
+                onClick={() => setBp(o.key)}
+                style={{
+                  padding: "8px 18px", borderRadius: "9px", border: "none", cursor: "pointer",
+                  fontSize: "12px", fontWeight: 700,
+                  background: bp === o.key ? "#1B4332" : "transparent",
+                  color: bp === o.key ? "#C5D82D" : "#6b7280",
+                  transition: "all 180ms ease",
+                }}
+              >
+                {o.label}
+              </button>
+            ))}
+          </div>
 
           {/* Price */}
           <div>
             <div style={{ display: "flex", alignItems: "flex-end", gap: "6px", flexWrap: "wrap" }}>
               <span style={{ color: "#1B4332", fontSize: "clamp(38px,8vw,52px)", fontWeight: 800, lineHeight: 1, fontFamily: "serif" }}>
-                ₹{perMonth.toLocaleString("en-IN")}
+                &#8377;{total.toLocaleString("en-IN")}
               </span>
-              <span style={{ color: "#9ca3af", fontSize: "15px", marginBottom: "6px" }}>/mo</span>
             </div>
-            <p style={{ color: "#6b7280", fontSize: "12px", marginTop: "4px" }}>
-              &#8377;{total.toLocaleString("en-IN")} billed {opt.label.toLowerCase()}
+            <p style={{ color: "#6b7280", fontSize: "13px", marginTop: "6px" }}>
+              billed {opt.label.toLowerCase()}
             </p>
           </div>
 
@@ -1095,7 +1113,6 @@ export function PricingContent() {
             Investment in securities market are subject to market risks. Read all related documents carefully before investing.
             Registration granted by SEBI and certification from NISM in no way guarantee performance of the Research Analyst
             or provide any assurance of returns to investors. SEBI Research Analyst Registration No.: INH000026114
-
           </p>
         </div>
       </section>
